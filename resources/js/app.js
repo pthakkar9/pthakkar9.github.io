@@ -11,13 +11,13 @@
     });
     app.config(function($routeProvider) {
         $routeProvider.when('/', {
-            templateUrl: 'home.html',
+            templateUrl: 'resources/partials/home.html',
             controller: 'HomeController'
         }).when('/about', {
-            templateUrl: 'about.html',
+            templateUrl: 'resources/partials/about.html',
             controller: 'AboutController'
         }).when('/contact', {
-            templateUrl: 'contact.html',
+            templateUrl: 'resources/partials/contact.html',
             controller: 'ContactController'
         }).otherwise({
             redirectTo: '/404'
