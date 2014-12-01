@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="leanCukeApp">
+<html ng-app="leancuke">
     <head>
         <!-- bootstrap and fontawesome -->
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
         <!--link rel="stylesheet" type="text/css" href="resources/css/app.css"-->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angular.js/1.3.3/angular-route.js"></script>
-        <script type="text/javascript" src="resources/js/app.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-route.js"></script>
+        <script type="text/javascript" src="app.js"></script>
     </head>
-    <body ng-controller="homeController as home">
+    <body ng-controller="HomeController as home">
         <!-- HEADER AND NAVBAR -->
         <header>
             <nav class="navbar navbar-default">
@@ -19,9 +19,9 @@
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#/contact"><i class="fa fa-comment"></i> Contact</a></li>
                 </ul>
             </div>
             </nav>
@@ -32,7 +32,11 @@
             <!-- angular templating -->
             <!-- this is where content will be injected -->
             <div ng-view></div>
-            {{pageName}}
+
         </div>
+
+            {{2+2}}
+            {{home.message}}
+            {{3+3}}
     </body>
 </html>
